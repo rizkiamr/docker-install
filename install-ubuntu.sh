@@ -13,6 +13,6 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y --allow-change-held-packages
 /etc/init.d/docker start
 docker version
